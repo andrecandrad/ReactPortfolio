@@ -1,14 +1,7 @@
 import React from "react";
 import terminal from "../assets/terminal.svg";
 import blur from "../assets/ellipse.png";
-import {
-  TerminalSvg,
-  HexagonFill,
-  DrawGreen,
-  DrawBlue,
-  Notepad,
-  Blur,
-} from "./Svgs";
+import { TerminalSvg, HexagonFill, DrawGreen, DrawBlue, Notepad } from "./Svgs";
 
 const Terminal = () => {
   return (
@@ -28,6 +21,10 @@ const Terminal = () => {
 
         <div className="absolute top-36 left-[656px] z-10">
           <DrawBlue />
+        </div>
+
+        <div className="absolute top-[380px] left-[620px] z-10">
+          <Notepad />
         </div>
 
         <div className="absolute top-[170px] right-[30px] z-10 h-[500px] w-[500px] blur"></div>
