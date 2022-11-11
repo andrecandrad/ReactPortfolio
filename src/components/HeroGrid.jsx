@@ -4,7 +4,7 @@ import Terminal from "./Terminal";
 
 const HeroGrid = () => {
   return (
-    <div className="grid grid-cols-2 gap-10">
+    <div className="mx-auto mt-48 grid grid-cols-2 gap-36">
       <Terminal />
       <Introduction />
     </div>

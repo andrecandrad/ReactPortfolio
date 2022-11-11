@@ -1,15 +1,37 @@
 import React from "react";
 import terminal from "../assets/terminal.svg";
 import blur from "../assets/ellipse.png";
+import {
+  TerminalSvg,
+  HexagonFill,
+  DrawGreen,
+  DrawBlue,
+  Notepad,
+  Blur,
+} from "./Svgs";
 
 const Terminal = () => {
   return (
     <>
-      <img src={terminal} className="relative z-10 w-full select-none" />
-      <img
-        src={blur}
-        className="z-100 absolute inset-x-0 bottom-40 hidden h-auto select-none"
-      />
+      <div className="z-100 relative">
+        <div>
+          <TerminalSvg />
+        </div>
+
+        <div className="absolute -left-[7rem] bottom-[20rem] -z-50">
+          <HexagonFill />
+        </div>
+
+        <div className="absolute -left-[35px] top-[275px] z-10">
+          <DrawGreen />
+        </div>
+
+        <div className="absolute top-36 left-[656px] z-10">
+          <DrawBlue />
+        </div>
+
+        <div className="absolute top-[170px] right-[30px] z-10 h-[500px] w-[500px] blur"></div>
+      </div>
     </>
   );
 };
